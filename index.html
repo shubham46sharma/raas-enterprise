@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RAAS Enterprise — Professional Web Development & Library Digitalization services. Building digital futures, one solution at a time." />
+  <meta name="theme-color" content="#0A1628" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="RAAS Enterprise — Web Development & Library Digitalization" />
+  <meta property="og:description" content="Professional web presence creation and Koha library digitalization services. End-to-end support, affordable pricing." />
+  <meta property="og:image" content="og-image.svg" />
+  <meta property="og:type" content="website" />
+
+  <title>RAAS Enterprise — Web Development & Library Digitalization</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HEADER / NAV
+═══════════════════════════════════════════════════════════ -->
+<header class="header" role="banner">
+  <div class="container">
+    <nav class="nav" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="RAAS Enterprise Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 68" height="44" width="auto" aria-hidden="true">
+          <defs>
+            <linearGradient id="nIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#2563EB"/>
+              <stop offset="100%" style="stop-color:#1D4ED8"/>
+            </linearGradient>
+            <linearGradient id="nGold" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#F59E0B"/>
+              <stop offset="100%" style="stop-color:#FBBF24"/>
+            </linearGradient>
+          </defs>
+          <!-- Hexagon icon -->
+          <g transform="translate(2,4)">
+            <polygon points="30,0 54,14 54,42 30,56 6,42 6,14" fill="url(#nIconGrad)"/>
+            <polygon points="30,6 48,17 48,39 30,50 12,39 12,17" fill="none" stroke="url(#nGold)" stroke-width="1.5" opacity="0.65"/>
+            <text x="15" y="41" font-family="Georgia,serif" font-weight="900" font-size="32" fill="white">R</text>
+            <circle cx="9" cy="13" r="2" fill="#F59E0B" opacity="0.8"/>
+            <circle cx="51" cy="13" r="2" fill="#F59E0B" opacity="0.8"/>
+          </g>
+          <!-- RAAS wordmark -->
+          <text x="68" y="34" font-family="Georgia,serif" font-weight="900" font-size="24" letter-spacing="3" fill="white">RAAS</text>
+          <rect x="68" y="38" width="72" height="2.5" rx="1.5" fill="url(#nGold)"/>
+          <text x="69" y="52" font-family="Arial,sans-serif" font-weight="400" font-size="9.5" letter-spacing="5.5" fill="#94A3B8">ENTERPRISE</text>
+        </svg>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- CTA + Hamburger -->
+      <div style="display:flex;align-items:center;gap:12px;">
+        <a href="#contact" class="btn btn-gold btn-sm" style="font-size:0.85rem;padding:10px 22px;">Get a Quote</a>
+        <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#why-us">Why Us</a>
+  <a href="#process">Process</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="btn btn-gold">Get a Quote</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO SECTION
+═══════════════════════════════════════════════════════════ -->
+<section class="hero" id="home" aria-label="Hero">
+  <!-- Animated Background -->
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-pattern" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+
+      <!-- Text Column -->
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Now Accepting New Clients — 2026
+        </div>
+
+        <h1 class="hero-title">
+          Building <span class="highlight">Digital Futures</span>,<br />
+          One <span class="gold">Solution</span> at a Time
+        </h1>
+
+        <p class="hero-desc">
+          RAAS Enterprise empowers businesses with professional web presence and
+          modernizes libraries with Koha open-source digitalization — delivering
+          end-to-end support, training, and ongoing maintenance.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Start Your Project
+          </a>
+          <a href="#services" class="btn btn-outline btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+            Learn More
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong><span data-counter="50" data-suffix="+">0+</span></strong>
+            <small>Projects Delivered</small>
+          </div>
+          <div class="hero-stat">
+            <strong><span data-counter="100" data-suffix="%">0%</span></strong>
+            <small>Client Satisfaction</small>
+          </div>
+          <div class="hero-stat">
+            <strong><span data-counter="3" data-suffix=" Days">0 Days</span></strong>
+            <small>Library Training</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual Column -->
+      <div class="hero-visual" aria-hidden="true">
+        <!-- Browser/device SVG mockup -->
+        <svg class="device-mockup" viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="browserBg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#1E3A5F"/>
+              <stop offset="100%" style="stop-color:#0F1F3D"/>
+            </linearGradient>
+            <linearGradient id="browserHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#0A1628"/>
+              <stop offset="100%" style="stop-color:#0F1F3D"/>
+            </linearGradient>
+            <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#2563EB"/>
+              <stop offset="100%" style="stop-color:#F59E0B"/>
+            </linearGradient>
+            <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:0.8"/>
+              <stop offset="100%" style="stop-color:#0F1F3D;stop-opacity:0.9"/>
+            </linearGradient>
+            <clipPath id="browserClip">
+              <rect x="10" y="10" width="460" height="360" rx="16"/>
+            </clipPath>
+            <filter id="softGlow">
+              <feGaussianBlur stdDeviation="4" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+          <!-- Browser frame -->
+          <rect x="10" y="10" width="460" height="360" rx="16" fill="url(#browserBg)" stroke="rgba(37,99,235,0.3)" stroke-width="1.5"/>
+
+          <!-- Browser chrome bar -->
+          <rect x="10" y="10" width="460" height="44" rx="16" fill="url(#browserHeader)"/>
+          <rect x="10" y="38" width="460" height="16" fill="url(#browserHeader)"/>
+
+          <!-- Traffic lights -->
+          <circle cx="38" cy="32" r="6" fill="#FF5F57"/>
+          <circle cx="58" cy="32" r="6" fill="#FFBD2E"/>
+          <circle cx="78" cy="32" r="6" fill="#28C840"/>
+
+          <!-- URL bar -->
+          <rect x="100" y="22" width="260" height="20" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+          <text x="130" y="35" font-family="Arial,sans-serif" font-size="9" fill="#64748B">🔒  raasEnterprise.com</text>
+
+          <!-- Page content area -->
+          <g clip-path="url(#browserClip)">
+            <!-- Hero area in mockup -->
+            <rect x="10" y="54" width="460" height="316" fill="#080F1E"/>
+
+            <!-- Gradient overlay in mockup hero -->
+            <rect x="10" y="54" width="460" height="120" fill="url(#browserBg)" opacity="0.7"/>
+
+            <!-- Mock navbar line -->
+            <rect x="10" y="54" width="460" height="28" fill="rgba(10,22,40,0.9)"/>
+            <circle cx="36" cy="68" r="8" fill="#2563EB" opacity="0.8"/>
+            <rect x="52" y="64" width="30" height="8" rx="4" fill="rgba(255,255,255,0.15)"/>
+            <rect x="200" y="65" width="22" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+            <rect x="232" y="65" width="22" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+            <rect x="264" y="65" width="22" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+            <rect x="380" y="62" width="60" height="12" rx="6" fill="#2563EB" opacity="0.85"/>
+
+            <!-- Mock hero headline lines -->
+            <rect x="40" y="100" width="160" height="12" rx="6" fill="rgba(255,255,255,0.7)"/>
+            <rect x="40" y="120" width="130" height="12" rx="6" fill="rgba(255,255,255,0.6)"/>
+            <rect x="40" y="142" width="180" height="6" rx="3" fill="rgba(148,163,184,0.4)"/>
+            <rect x="40" y="154" width="140" height="6" rx="3" fill="rgba(148,163,184,0.3)"/>
+
+            <!-- CTA buttons in mockup -->
+            <rect x="40" y="170" width="80" height="18" rx="9" fill="#2563EB" opacity="0.9"/>
+            <rect x="132" y="170" width="70" height="18" rx="9" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+
+            <!-- Gold accent bar -->
+            <rect x="10" y="196" width="460" height="3" fill="url(#barGrad)" opacity="0.6"/>
+
+            <!-- Service cards row -->
+            <rect x="25" y="210" width="198" height="90" rx="10" fill="url(#cardBg)" stroke="rgba(37,99,235,0.3)" stroke-width="1"/>
+            <rect x="237" y="210" width="198" height="90" rx="10" fill="url(#cardBg)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+
+            <!-- Card icons -->
+            <circle cx="55" cy="238" r="14" fill="rgba(37,99,235,0.2)"/>
+            <text x="47" y="243" font-family="Arial" font-size="14">🌐</text>
+            <circle cx="267" cy="238" r="14" fill="rgba(245,158,11,0.15)"/>
+            <text x="258" y="243" font-family="Arial" font-size="14">📚</text>
+
+            <!-- Card text lines -->
+            <rect x="78" y="232" width="90" height="8" rx="4" fill="rgba(255,255,255,0.6)"/>
+            <rect x="78" y="246" width="120" height="5" rx="2.5" fill="rgba(148,163,184,0.3)"/>
+            <rect x="78" y="256" width="100" height="5" rx="2.5" fill="rgba(148,163,184,0.25)"/>
+            <rect x="25" y="272" width="60" height="8" rx="4" fill="rgba(37,99,235,0.6)"/>
+
+            <rect x="290" y="232" width="90" height="8" rx="4" fill="rgba(255,255,255,0.6)"/>
+            <rect x="290" y="246" width="120" height="5" rx="2.5" fill="rgba(148,163,184,0.3)"/>
+            <rect x="290" y="256" width="100" height="5" rx="2.5" fill="rgba(148,163,184,0.25)"/>
+            <rect x="237" y="272" width="60" height="8" rx="4" fill="rgba(245,158,11,0.6)"/>
+
+            <!-- Stats row -->
+            <rect x="25" y="315" width="100" height="35" rx="8" fill="rgba(37,99,235,0.15)" stroke="rgba(37,99,235,0.2)" stroke-width="1"/>
+            <rect x="140" y="315" width="100" height="35" rx="8" fill="rgba(37,99,235,0.1)" stroke="rgba(37,99,235,0.15)" stroke-width="1"/>
+            <rect x="255" y="315" width="100" height="35" rx="8" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+            <rect x="370" y="315" width="75" height="35" rx="8" fill="rgba(37,99,235,0.1)" stroke="rgba(37,99,235,0.15)" stroke-width="1"/>
+
+            <text x="55" y="328" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="12" fill="white">50+</text>
+            <text x="55" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#94A3B8">Projects</text>
+
+            <text x="170" y="328" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="12" fill="white">100%</text>
+            <text x="170" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#94A3B8">Satisfaction</text>
+
+            <text x="285" y="328" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="12" fill="#F59E0B">3 Days</text>
+            <text x="285" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#94A3B8">Training</text>
+
+            <text x="383" y="328" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="12" fill="white">24/7</text>
+            <text x="383" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#94A3B8">Support</text>
+          </g>
+
+          <!-- Browser reflection/gloss -->
+          <rect x="10" y="10" width="460" height="44" rx="16" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+        </svg>
+
+        <!-- Floating badge cards -->
+        <div class="float-card float-card-1">
+          <div class="float-card-icon" style="background:linear-gradient(135deg,#2563EB,#1D4ED8);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <div style="font-size:0.75rem;color:#94A3B8;margin-bottom:1px;">Web Presence</div>
+            <div style="color:white;font-weight:700;">Live &amp; Running</div>
+          </div>
+        </div>
+
+        <div class="float-card float-card-2">
+          <div class="float-card-icon" style="background:linear-gradient(135deg,#F59E0B,#D97706);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0A1628" stroke-width="2.5" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div>
+            <div style="font-size:0.75rem;color:#94A3B8;margin-bottom:1px;">Library Koha</div>
+            <div style="color:white;font-weight:700;">Digitalized ✓</div>
+          </div>
+        </div>
+
+        <div class="float-card float-card-3">
+          <div style="font-size:1.2rem;line-height:1;">⭐</div>
+          <div>
+            <div style="color:white;font-weight:700;font-size:0.9rem;">5.0 Rating</div>
+            <div style="font-size:0.72rem;color:#94A3B8;">100% Satisfaction</div>
+          </div>
+        </div>
+      </div>
+      <!-- /hero-visual -->
+
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SERVICES SECTION
+═══════════════════════════════════════════════════════════ -->
+<div class="divider"></div>
+<section class="services" id="services" aria-labelledby="services-heading">
+  <div class="container">
+
+    <div class="text-center fade-in">
+      <span class="section-tag">Our Services</span>
+      <h2 class="section-title" id="services-heading">
+        Everything You Need to<br /><span>Thrive Digitally</span>
+      </h2>
+      <p class="section-subtitle">
+        From building your online presence to modernizing your institution's knowledge infrastructure —
+        we deliver complete, end-to-end digital solutions.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Service 1: Web Development -->
+      <article class="service-card fade-in fade-in-delay-1" aria-labelledby="service-web-title">
+        <div class="service-icon-wrap blue" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </div>
+
+        <h3 class="service-title" id="service-web-title">Web Presence</h3>
+        <p class="service-desc">
+          We craft stunning, high-performance websites tailored to your business — whether you're a
+          retail shop, a school, a healthcare provider, or a startup. Every site is built for speed,
+          SEO, and conversions.
+        </p>
+
+        <ul class="service-features" aria-label="Web Presence features">
+          <li class="service-feature">
+            <span class="check blue" aria-hidden="true">✓</span>
+            Custom-designed, mobile-first websites
+          </li>
+          <li class="service-feature">
+            <span class="check blue" aria-hidden="true">✓</span>
+            SEO optimization &amp; performance tuning
+          </li>
+          <li class="service-feature">
+            <span class="check blue" aria-hidden="true">✓</span>
+            E-commerce &amp; booking integrations
+          </li>
+          <li class="service-feature">
+            <span class="check blue" aria-hidden="true">✓</span>
+            Content Management System (CMS) setup
+          </li>
+          <li class="service-feature">
+            <span class="check blue" aria-hidden="true">✓</span>
+            Domain, hosting &amp; SSL assistance
+          </li>
+          <li class="service-feature">
+            <span class="check blue" aria-hidden="true">✓</span>
+            Post-launch support &amp; maintenance
+          </li>
+        </ul>
+
+        <div class="service-cta">
+          <a href="#contact" class="btn btn-primary">
+            Start a Web Project
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Service 2: Library Digitalization -->
+      <article class="service-card card-gold fade-in fade-in-delay-2" aria-labelledby="service-lib-title">
+        <div class="service-icon-wrap gold" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FBBF24" stroke-width="1.8" aria-hidden="true">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+          </svg>
+        </div>
+
+        <h3 class="service-title" id="service-lib-title">Library Digitalization</h3>
+        <p class="service-desc">
+          Modernize your library with industry-leading Koha open-source ILS. We handle complete
+          installation, catalog migration, staff training, and long-term support — turning paper
+          archives into a powerful digital knowledge hub.
+        </p>
+
+        <ul class="service-features" aria-label="Library Digitalization features">
+          <li class="service-feature">
+            <span class="check gold" aria-hidden="true">✓</span>
+            Koha ILS installation &amp; configuration
+          </li>
+          <li class="service-feature">
+            <span class="check gold" aria-hidden="true">✓</span>
+            Full catalog &amp; data digitization
+          </li>
+          <li class="service-feature">
+            <span class="check gold" aria-hidden="true">✓</span>
+            3-day intensive staff training program
+          </li>
+          <li class="service-feature">
+            <span class="check gold" aria-hidden="true">✓</span>
+            MARC21 &amp; Dublin Core record import
+          </li>
+          <li class="service-feature">
+            <span class="check gold" aria-hidden="true">✓</span>
+            Barcode &amp; RFID system integration
+          </li>
+          <li class="service-feature">
+            <span class="check gold" aria-hidden="true">✓</span>
+            Ongoing maintenance &amp; technical support
+          </li>
+        </ul>
+
+        <div class="service-cta">
+          <a href="#contact" class="btn btn-gold">
+            Digitalize Your Library
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     WHY CHOOSE US
+═══════════════════════════════════════════════════════════ -->
+<div class="divider"></div>
+<section class="why-us" id="why-us" aria-labelledby="why-heading">
+  <div class="container">
+
+    <div class="text-center fade-in">
+      <span class="section-tag">Why RAAS Enterprise</span>
+      <h2 class="section-title" id="why-heading">
+        The <span>RAAS Advantage</span>
+      </h2>
+      <p class="section-subtitle">
+        We don't just deliver projects — we build long-term partnerships backed by expertise,
+        transparency, and a relentless drive for excellence.
+      </p>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card fade-in fade-in-delay-1">
+        <div class="why-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h3>Expert Team</h3>
+        <p>Seasoned developers and library technology specialists with hands-on experience across diverse industries and institutions.</p>
+      </div>
+
+      <div class="why-card fade-in fade-in-delay-2">
+        <div class="why-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h3>End-to-End Support</h3>
+        <p>From the first consultation through launch and beyond — we stay with you at every step, providing reliable post-deployment support.</p>
+      </div>
+
+      <div class="why-card fade-in fade-in-delay-3">
+        <div class="why-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+            <line x1="12" y1="1" x2="12" y2="23"/>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <h3>Affordable Pricing</h3>
+        <p>Premium quality without the premium price tag. We offer transparent, competitive pricing with flexible packages for every budget.</p>
+      </div>
+
+      <div class="why-card fade-in fade-in-delay-4">
+        <div class="why-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <h3>Proven Technology</h3>
+        <p>We deploy battle-tested, open-source technology stacks including Koha ILS — solutions trusted by thousands of institutions worldwide.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PROCESS SECTION
+═══════════════════════════════════════════════════════════ -->
+<div class="divider"></div>
+<section class="process" id="process" aria-labelledby="process-heading">
+  <div class="container">
+
+    <div class="text-center fade-in">
+      <span class="section-tag">How We Work</span>
+      <h2 class="section-title" id="process-heading">
+        Our Proven <span>5-Step Process</span>
+      </h2>
+      <p class="section-subtitle">
+        A structured, transparent approach that keeps you informed and in control from
+        day one through launch and beyond.
+      </p>
+    </div>
+
+    <div class="process-timeline" role="list" aria-label="Project process steps">
+      <div class="process-steps">
+
+        <div class="process-step fade-in fade-in-delay-1" role="listitem">
+          <div class="step-number active" aria-label="Step 1">01</div>
+          <div class="step-content">
+            <span class="step-icon" aria-hidden="true">💬</span>
+            <div class="step-title">Consultation</div>
+            <p class="step-desc">We understand your goals, challenges, and requirements through detailed discovery sessions.</p>
+          </div>
+        </div>
+
+        <div class="process-step fade-in fade-in-delay-2" role="listitem">
+          <div class="step-number active" aria-label="Step 2">02</div>
+          <div class="step-content">
+            <span class="step-icon" aria-hidden="true">🎨</span>
+            <div class="step-title">Design &amp; Planning</div>
+            <p class="step-desc">Detailed wireframes, technical architecture, and a clear project roadmap with timelines.</p>
+          </div>
+        </div>
+
+        <div class="process-step fade-in fade-in-delay-3" role="listitem">
+          <div class="step-number active" aria-label="Step 3">03</div>
+          <div class="step-content">
+            <span class="step-icon" aria-hidden="true">⚙️</span>
+            <div class="step-title">Development</div>
+            <p class="step-desc">Agile development with regular check-ins, demos, and iterative feedback loops.</p>
+          </div>
+        </div>
+
+        <div class="process-step fade-in fade-in-delay-4" role="listitem">
+          <div class="step-number active" aria-label="Step 4">04</div>
+          <div class="step-content">
+            <span class="step-icon" aria-hidden="true">🎓</span>
+            <div class="step-title">Training</div>
+            <p class="step-desc">Hands-on training sessions (3-day intensive for libraries) so your team is fully empowered.</p>
+          </div>
+        </div>
+
+        <div class="process-step fade-in fade-in-delay-4" role="listitem">
+          <div class="step-number active" aria-label="Step 5">05</div>
+          <div class="step-content">
+            <span class="step-icon" aria-hidden="true">🚀</span>
+            <div class="step-title">Launch &amp; Maintain</div>
+            <p class="step-desc">Smooth go-live deployment with 24/7 monitoring and proactive long-term maintenance.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     STATS SECTION
+═══════════════════════════════════════════════════════════ -->
+<section class="stats" aria-label="Key statistics">
+  <div class="container">
+    <div class="stats-grid">
+
+      <div class="stat-item fade-in">
+        <div class="stat-number">
+          <span data-counter="50" data-suffix="" data-duration="2000">0</span>
+          <span class="accent">+</span>
+        </div>
+        <div class="stat-label">Projects Delivered</div>
+      </div>
+
+      <div class="stat-item fade-in fade-in-delay-1">
+        <div class="stat-number">
+          <span data-counter="100" data-suffix="" data-duration="2000">0</span>
+          <span class="accent">%</span>
+        </div>
+        <div class="stat-label">Client Satisfaction</div>
+      </div>
+
+      <div class="stat-item fade-in fade-in-delay-2">
+        <div class="stat-number">
+          <span data-counter="3" data-suffix="" data-duration="1200">0</span>
+          <span class="accent">-Day</span>
+        </div>
+        <div class="stat-label">Library Training Program</div>
+      </div>
+
+      <div class="stat-item fade-in fade-in-delay-3">
+        <div class="stat-number">
+          <span data-counter="24" data-suffix="" data-duration="1500">0</span>
+          <span class="accent">/7</span>
+        </div>
+        <div class="stat-label">Support Available</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════════════════════ -->
+<div class="divider"></div>
+<section class="testimonials" aria-labelledby="testimonials-heading">
+  <div class="container">
+
+    <div class="text-center fade-in">
+      <span class="section-tag">Client Stories</span>
+      <h2 class="section-title" id="testimonials-heading">
+        Trusted by <span>Organizations</span> Across the Region
+      </h2>
+      <p class="section-subtitle">
+        Real results from real clients — see why businesses and institutions choose RAAS Enterprise.
+      </p>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <article class="testimonial-card fade-in fade-in-delay-1" aria-label="Testimonial from Priya Sharma">
+        <div class="stars" aria-label="5 out of 5 stars" role="img">
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+        </div>
+        <blockquote class="testimonial-text">
+          "RAAS Enterprise transformed our small retail business with a stunning website that actually
+          brings in customers. The team was professional, timely, and went above and beyond our
+          expectations. Our online inquiries tripled within two months of launch."
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar blue" aria-hidden="true">PS</div>
+          <div>
+            <div class="author-name">Priya Sharma</div>
+            <div class="author-role">Owner, Sharma Boutique</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card fade-in fade-in-delay-2" aria-label="Testimonial from Dr. Ramesh Nair">
+        <div class="stars" aria-label="5 out of 5 stars" role="img">
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+        </div>
+        <blockquote class="testimonial-text">
+          "The library digitalization project exceeded all our goals. RAAS Enterprise installed Koha,
+          migrated over 12,000 catalog records, and trained our entire staff in just three days.
+          Our library operations are now fully digital and incredibly efficient."
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar gold" aria-hidden="true">RN</div>
+          <div>
+            <div class="author-name">Dr. Ramesh Nair</div>
+            <div class="author-role">Principal, City College Library</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card fade-in fade-in-delay-3" aria-label="Testimonial from Aisha Khan">
+        <div class="stars" aria-label="5 out of 5 stars" role="img">
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+        </div>
+        <blockquote class="testimonial-text">
+          "From first contact to final launch, the experience was seamless. RAAS Enterprise understood
+          our NGO's unique needs, built a bilingual website on a tight budget, and provided training
+          that made us fully self-sufficient. Outstanding value and craftsmanship."
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar teal" aria-hidden="true">AK</div>
+          <div>
+            <div class="author-name">Aisha Khan</div>
+            <div class="author-role">Director, Bright Futures NGO</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTACT SECTION
+═══════════════════════════════════════════════════════════ -->
+<div class="divider"></div>
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+
+    <div class="text-center fade-in">
+      <span class="section-tag">Get in Touch</span>
+      <h2 class="section-title" id="contact-heading">
+        Let's Build Something <span>Remarkable</span>
+      </h2>
+      <p class="section-subtitle">
+        Ready to take your business or institution digital? Tell us about your project and
+        we'll get back to you within 24 hours.
+      </p>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- Contact Info -->
+      <div class="contact-info slide-left">
+        <div class="contact-info-header">
+          <span class="section-tag" style="margin-bottom:12px;">Contact Info</span>
+          <p>We'd love to hear from you. Reach out through any of these channels or fill in the form and we'll respond promptly.</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div class="contact-card-body">
+            <div class="contact-card-label">Email</div>
+            <div class="contact-card-value">hello@raasEnterprise.com</div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <div class="contact-card-body">
+            <div class="contact-card-label">Phone</div>
+            <div class="contact-card-value">+91 98765 43210</div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div class="contact-card-body">
+            <div class="contact-card-label">Location</div>
+            <div class="contact-card-value">India — Serving Nationwide</div>
+          </div>
+        </div>
+
+        <!-- Response time badge -->
+        <div style="background:rgba(37,99,235,.1);border:1px solid rgba(37,99,235,.2);border-radius:12px;padding:18px 20px;margin-top:8px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+            <span style="width:8px;height:8px;background:#10B981;border-radius:50%;display:block;flex-shrink:0;box-shadow:0 0 8px #10B981;"></span>
+            <span style="font-weight:700;font-size:0.9rem;">We respond within 24 hours</span>
+          </div>
+          <p style="font-size:0.82rem;color:#94A3B8;margin:0;">Free consultation call available for all new inquiries. No commitment required.</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap slide-right">
+        <form id="contact-form" novalidate aria-label="Contact form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name <span style="color:#EF4444" aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span style="color:#EF4444" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interest <span style="color:#EF4444" aria-hidden="true">*</span></label>
+              <select id="service" name="service" required aria-required="true">
+                <option value="" disabled selected>Select a service</option>
+                <option value="web">Web Presence / Website</option>
+                <option value="library">Library Digitalization (Koha)</option>
+                <option value="both">Both Services</option>
+                <option value="other">Other / General Inquiry</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message <span style="color:#EF4444" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" placeholder="Tell us about your project, goals, and any specific requirements..." required rows="5" aria-required="true"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg form-submit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+        </form>
+
+        <!-- Success State -->
+        <div class="form-success" role="status" aria-live="polite">
+          <div class="success-icon" aria-hidden="true">✓</div>
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. Our team will review your inquiry and respond within 24 hours.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+
+      <!-- Brand col -->
+      <div class="footer-brand">
+        <a href="#home" aria-label="RAAS Enterprise Home">
+          <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 68" height="40" width="auto" aria-hidden="true">
+            <defs>
+              <linearGradient id="fIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#2563EB"/>
+                <stop offset="100%" style="stop-color:#1D4ED8"/>
+              </linearGradient>
+              <linearGradient id="fGold" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#F59E0B"/>
+                <stop offset="100%" style="stop-color:#FBBF24"/>
+              </linearGradient>
+            </defs>
+            <g transform="translate(2,4)">
+              <polygon points="30,0 54,14 54,42 30,56 6,42 6,14" fill="url(#fIconGrad)"/>
+              <polygon points="30,6 48,17 48,39 30,50 12,39 12,17" fill="none" stroke="url(#fGold)" stroke-width="1.5" opacity="0.65"/>
+              <text x="15" y="41" font-family="Georgia,serif" font-weight="900" font-size="32" fill="white">R</text>
+            </g>
+            <text x="68" y="34" font-family="Georgia,serif" font-weight="900" font-size="24" letter-spacing="3" fill="white">RAAS</text>
+            <rect x="68" y="38" width="72" height="2.5" rx="1.5" fill="url(#fGold)"/>
+            <text x="69" y="52" font-family="Arial,sans-serif" font-weight="400" font-size="9.5" letter-spacing="5.5" fill="#94A3B8">ENTERPRISE</text>
+          </svg>
+        </a>
+        <p class="footer-tagline">
+          Building digital futures through expert web development and transformative library digitalization solutions.
+        </p>
+        <nav class="social-links" aria-label="Social media links">
+          <!-- LinkedIn -->
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <!-- Twitter/X -->
+          <a href="#" class="social-link" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <!-- Facebook -->
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <!-- Email -->
+          <a href="mailto:hello@raasEnterprise.com" class="social-link" aria-label="Email us">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Services col -->
+      <div class="footer-col">
+        <h4>Services</h4>
+        <nav class="footer-links" aria-label="Services links">
+          <a href="#services">Web Development</a>
+          <a href="#services">Library Digitalization</a>
+          <a href="#services">Koha ILS Setup</a>
+          <a href="#services">Staff Training</a>
+          <a href="#services">Maintenance &amp; Support</a>
+        </nav>
+      </div>
+
+      <!-- Company col -->
+      <div class="footer-col">
+        <h4>Company</h4>
+        <nav class="footer-links" aria-label="Company links">
+          <a href="#home">About RAAS</a>
+          <a href="#why-us">Why Choose Us</a>
+          <a href="#process">Our Process</a>
+          <a href="#contact">Get a Quote</a>
+        </nav>
+      </div>
+
+      <!-- Resources col -->
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <nav class="footer-links" aria-label="Resource links">
+          <a href="#contact">Free Consultation</a>
+          <a href="#contact">Project Inquiry</a>
+          <a href="https://koha-community.org" target="_blank" rel="noopener noreferrer">About Koha ILS</a>
+          <a href="#contact">Privacy Policy</a>
+        </nav>
+      </div>
+
+    </div>
+
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 RAAS Enterprise. All Rights Reserved.</p>
+      <p>Made with <span style="color:#EF4444;" aria-label="love">♥</span> for the digital future</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
