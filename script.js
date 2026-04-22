@@ -176,38 +176,48 @@ function initActiveNavLinks() {
   setActive();
 }
 
-/* ── 7. Contact Form Handler ─────────────────────────────── */
+/* ── 7. Contact Form Handler (Formspree) ─────────────────── */
 function initContactForm() {
   const form = document.querySelector('#contact-form');
   const successMsg = document.querySelector('.form-success');
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const submitBtn = form.querySelector('[type="submit"]');
-    const originalText = submitBtn.innerHTML;
+    const originalHTML = submitBtn.innerHTML;
+    const spinIcon = `<svg class="spin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg> Sending...`;
 
-    // Loading state
-    submitBtn.innerHTML = `
-      <svg class="spin" width="18" height="18" viewBox="0 0 24 24" fill="none"
-           stroke="currentColor" stroke-width="2">
-        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83
-                 M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-      </svg>
-      Sending...
-    `;
+    submitBtn.innerHTML = spinIcon;
     submitBtn.disabled = true;
 
-    // Simulate submission delay
-    setTimeout(() => {
-      form.style.display = 'none';
-      if (successMsg) {
-        successMsg.classList.add('show');
+    const action = form.getAttribute('action');
+    const data = new FormData(form);
+
+    try {
+      // If no real Formspree endpoint yet, skip the fetch and show success
+      const isPlaceholder = !action || action.includes('YOUR_FORM_ID');
+
+      if (!isPlaceholder) {
+        const res = await fetch(action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' },
+        });
+        if (!res.ok) throw new Error('Network error');
+      } else {
+        // Placeholder: simulate a short delay so the UX feels real
+        await new Promise(r => setTimeout(r, 900));
       }
-      submitBtn.innerHTML = originalText;
+
+      form.style.display = 'none';
+      if (successMsg) successMsg.classList.add('visible');
+    } catch {
+      submitBtn.innerHTML = originalHTML;
       submitBtn.disabled = false;
-    }, 1500);
+      alert('Something went wrong. Please email us directly at shubham46sharma@gmail.com');
+    }
   });
 }
 
