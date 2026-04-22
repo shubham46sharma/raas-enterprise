@@ -1140,6 +1140,59 @@ label {
   background-color: var(--bg-alt);
 }
 .form-group select option { background: var(--bg); color: var(--text-1); }
+
+.phone-input-wrap {
+  display: flex;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg-alt);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.phone-input-wrap:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(29,78,216,0.08);
+  background: var(--bg);
+}
+.phone-input-wrap select {
+  border: none !important;
+  border-right: 1.5px solid var(--border) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: var(--bg-alt) !important;
+  background-image: none !important;
+  padding: 11px 10px !important;
+  padding-right: 10px !important;
+  font-size: 0.85rem !important;
+  color: var(--text-1) !important;
+  width: auto !important;
+  flex-shrink: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-bottom: 0 !important;
+  min-width: 88px;
+}
+.phone-input-wrap select:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+  background: var(--bg-alt) !important;
+  outline: none;
+}
+.phone-input-wrap input[type="tel"] {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  flex: 1;
+  margin-bottom: 0 !important;
+  width: 0 !important;
+}
+.phone-input-wrap input[type="tel"]:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
 .form-group textarea {
   resize: vertical;
   min-height: 120px;

@@ -195,6 +195,15 @@ function initContactForm() {
     const action = form.getAttribute('action');
     const data = new FormData(form);
 
+    // Combine country code + number into a single "phone" field
+    const countrySelect = form.querySelector('#phone-country');
+    const phoneInput = form.querySelector('#phone-number');
+    if (countrySelect && phoneInput && phoneInput.value.trim()) {
+      data.set('phone', countrySelect.value + ' ' + phoneInput.value.trim());
+    }
+    data.delete('phone_country');
+    data.delete('phone_number');
+
     try {
       // If no real Formspree endpoint yet, skip the fetch and show success
       const isPlaceholder = !action || action.includes('YOUR_FORM_ID');

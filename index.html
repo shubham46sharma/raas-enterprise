@@ -41,27 +41,25 @@
 
       <!-- Logo -->
       <a href="#home" class="nav-logo" aria-label="RAAS Enterprise Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 68" height="44" width="auto" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 52" height="44" width="auto" aria-hidden="true">
           <defs>
-            <linearGradient id="nIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style="stop-color:#2563EB"/>
-              <stop offset="100%" style="stop-color:#1D4ED8"/>
-            </linearGradient>
-            <linearGradient id="nGold" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style="stop-color:#F59E0B"/>
-              <stop offset="100%" style="stop-color:#FBBF24"/>
+            <linearGradient id="navGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#2563EB"/>
+              <stop offset="100%" stop-color="#6D28D9"/>
             </linearGradient>
           </defs>
-          <!-- Hexagon icon -->
-          <g transform="translate(2,4)">
-            <polygon points="30,0 54,14 54,42 30,56 6,42 6,14" fill="url(#nIconGrad)"/>
-            <polygon points="30,6 48,17 48,39 30,50 12,39 12,17" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
-            <text x="15" y="41" font-family="Georgia,serif" font-weight="900" font-size="32" fill="white">R</text>
-          </g>
-          <!-- RAAS wordmark -->
-          <text x="68" y="34" font-family="Georgia,serif" font-weight="900" font-size="24" letter-spacing="3" fill="#0D0D0D">RAAS</text>
-          <rect x="68" y="38" width="72" height="2.5" rx="1.5" fill="#1D4ED8"/>
-          <text x="69" y="52" font-family="Arial,sans-serif" font-weight="400" font-size="9.5" letter-spacing="5.5" fill="#6B7280">ENTERPRISE</text>
+          <!-- Icon -->
+          <rect width="52" height="52" rx="13" fill="url(#navGrad)"/>
+          <rect width="52" height="52" rx="13" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+          <!-- R: stem -->
+          <rect x="10" y="10" width="6" height="32" fill="white"/>
+          <!-- R: bowl + counter -->
+          <path fill-rule="evenodd" fill="white" d="M 16,10 H 29 Q 38,10 38,19 Q 38,28 29,28 H 16 Z M 16,14 H 26 Q 33,14 33,19 Q 33,24 26,24 H 16 Z"/>
+          <!-- R: leg -->
+          <polygon points="16,28 24,28 42,42 34,42" fill="white"/>
+          <!-- Wordmark -->
+          <text x="68" y="30" font-family="'Plus Jakarta Sans','Inter',system-ui,sans-serif" font-weight="800" font-size="22" letter-spacing="1" fill="#0D0D0D">RAAS</text>
+          <text x="69" y="44" font-family="'Inter','Plus Jakarta Sans',system-ui,sans-serif" font-weight="500" font-size="9" letter-spacing="4.5" fill="#6B7280">ENTERPRISE</text>
         </svg>
       </a>
 
@@ -891,8 +889,52 @@
 
           <div class="form-row">
             <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" autocomplete="tel" />
+              <label for="phone-number">Phone Number</label>
+              <div class="phone-input-wrap">
+                <select id="phone-country" name="phone_country" aria-label="Country dial code" autocomplete="tel-country-code">
+                  <option value="+91">🇮🇳 +91</option>
+                  <option value="+1">🇺🇸 +1</option>
+                  <option value="+44">🇬🇧 +44</option>
+                  <option value="+61">🇦🇺 +61</option>
+                  <option value="+971">🇦🇪 +971</option>
+                  <option value="+65">🇸🇬 +65</option>
+                  <option value="+60">🇲🇾 +60</option>
+                  <option value="+49">🇩🇪 +49</option>
+                  <option value="+33">🇫🇷 +33</option>
+                  <option value="+31">🇳🇱 +31</option>
+                  <option value="+46">🇸🇪 +46</option>
+                  <option value="+47">🇳🇴 +47</option>
+                  <option value="+45">🇩🇰 +45</option>
+                  <option value="+358">🇫🇮 +358</option>
+                  <option value="+41">🇨🇭 +41</option>
+                  <option value="+43">🇦🇹 +43</option>
+                  <option value="+39">🇮🇹 +39</option>
+                  <option value="+34">🇪🇸 +34</option>
+                  <option value="+351">🇵🇹 +351</option>
+                  <option value="+48">🇵🇱 +48</option>
+                  <option value="+7">🇷🇺 +7</option>
+                  <option value="+86">🇨🇳 +86</option>
+                  <option value="+81">🇯🇵 +81</option>
+                  <option value="+82">🇰🇷 +82</option>
+                  <option value="+66">🇹🇭 +66</option>
+                  <option value="+62">🇮🇩 +62</option>
+                  <option value="+63">🇵🇭 +63</option>
+                  <option value="+92">🇵🇰 +92</option>
+                  <option value="+880">🇧🇩 +880</option>
+                  <option value="+94">🇱🇰 +94</option>
+                  <option value="+977">🇳🇵 +977</option>
+                  <option value="+27">🇿🇦 +27</option>
+                  <option value="+234">🇳🇬 +234</option>
+                  <option value="+254">🇰🇪 +254</option>
+                  <option value="+20">🇪🇬 +20</option>
+                  <option value="+55">🇧🇷 +55</option>
+                  <option value="+52">🇲🇽 +52</option>
+                  <option value="+54">🇦🇷 +54</option>
+                  <option value="+56">🇨🇱 +56</option>
+                  <option value="+64">🇳🇿 +64</option>
+                </select>
+                <input type="tel" id="phone-number" name="phone_number" placeholder="00000 00000" autocomplete="tel-national" />
+              </div>
             </div>
             <div class="form-group">
               <label for="service">Service Interest <span style="color:#EF4444" aria-hidden="true">*</span></label>
@@ -941,25 +983,25 @@
       <!-- Brand col -->
       <div class="footer-brand">
         <a href="#home" aria-label="RAAS Enterprise Home">
-          <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 68" height="40" width="auto" aria-hidden="true">
+          <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 52" height="40" width="auto" aria-hidden="true">
             <defs>
-              <linearGradient id="fIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#2563EB"/>
-                <stop offset="100%" style="stop-color:#1D4ED8"/>
-              </linearGradient>
-              <linearGradient id="fGold" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" style="stop-color:#F59E0B"/>
-                <stop offset="100%" style="stop-color:#FBBF24"/>
+              <linearGradient id="footGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#2563EB"/>
+                <stop offset="100%" stop-color="#6D28D9"/>
               </linearGradient>
             </defs>
-            <g transform="translate(2,4)">
-              <polygon points="30,0 54,14 54,42 30,56 6,42 6,14" fill="url(#fIconGrad)"/>
-              <polygon points="30,6 48,17 48,39 30,50 12,39 12,17" fill="none" stroke="url(#fGold)" stroke-width="1.5" opacity="0.65"/>
-              <text x="15" y="41" font-family="Georgia,serif" font-weight="900" font-size="32" fill="white">R</text>
-            </g>
-            <text x="68" y="34" font-family="Georgia,serif" font-weight="900" font-size="24" letter-spacing="3" fill="white">RAAS</text>
-            <rect x="68" y="38" width="72" height="2.5" rx="1.5" fill="url(#fGold)"/>
-            <text x="69" y="52" font-family="Arial,sans-serif" font-weight="400" font-size="9.5" letter-spacing="5.5" fill="#94A3B8">ENTERPRISE</text>
+            <!-- Icon -->
+            <rect width="52" height="52" rx="13" fill="url(#footGrad)"/>
+            <rect width="52" height="52" rx="13" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+            <!-- R: stem -->
+            <rect x="10" y="10" width="6" height="32" fill="white"/>
+            <!-- R: bowl + counter -->
+            <path fill-rule="evenodd" fill="white" d="M 16,10 H 29 Q 38,10 38,19 Q 38,28 29,28 H 16 Z M 16,14 H 26 Q 33,14 33,19 Q 33,24 26,24 H 16 Z"/>
+            <!-- R: leg -->
+            <polygon points="16,28 24,28 42,42 34,42" fill="white"/>
+            <!-- Wordmark -->
+            <text x="68" y="30" font-family="'Plus Jakarta Sans','Inter',system-ui,sans-serif" font-weight="800" font-size="22" letter-spacing="1" fill="#FFFFFF">RAAS</text>
+            <text x="69" y="44" font-family="'Inter','Plus Jakarta Sans',system-ui,sans-serif" font-weight="500" font-size="9" letter-spacing="4.5" fill="#9CA3AF">ENTERPRISE</text>
           </svg>
         </a>
         <p class="footer-tagline">
