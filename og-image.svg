@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1628;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#0F1F3D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0A1628;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FBBF24;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0F1F3D;stop-opacity:0.8" />
+    </linearGradient>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Ambient glow blobs -->
+  <circle cx="200" cy="150" r="200" fill="#2563EB" opacity="0.08" filter="url(#blur1)"/>
+  <circle cx="1050" cy="500" r="180" fill="#F59E0B" opacity="0.06" filter="url(#blur1)"/>
+  <circle cx="900" cy="100" r="150" fill="#2563EB" opacity="0.07" filter="url(#blur1)"/>
+
+  <!-- Decorative grid lines -->
+  <g opacity="0.04" stroke="#FFFFFF" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+
+  <!-- Left decorative geometric -->
+  <g transform="translate(60, 200)">
+    <polygon points="70,0 140,40 140,120 70,160 0,120 0,40" fill="none" stroke="#2563EB" stroke-width="2" opacity="0.4"/>
+    <polygon points="70,20 120,48 120,112 70,140 20,112 20,48" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.3"/>
+    <circle cx="70" cy="80" r="20" fill="#2563EB" opacity="0.2"/>
+    <text x="58" y="88" font-family="Georgia, serif" font-weight="900" font-size="24" fill="white" opacity="0.9">R</text>
+  </g>
+
+  <!-- Right decorative geometric cluster -->
+  <g transform="translate(980, 80)">
+    <polygon points="60,0 120,35 120,105 60,140 0,105 0,35" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.35"/>
+    <polygon points="60,15 100,38 100,102 60,125 20,102 20,38" fill="none" stroke="#2563EB" stroke-width="1" opacity="0.25"/>
+  </g>
+  <g transform="translate(1050, 400)">
+    <polygon points="40,0 80,23 80,69 40,92 0,69 0,23" fill="none" stroke="#2563EB" stroke-width="1.5" opacity="0.3"/>
+  </g>
+
+  <!-- Floating dots -->
+  <circle cx="350" cy="80" r="3" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="420" cy="560" r="3" fill="#2563EB" opacity="0.6"/>
+  <circle cx="800" cy="50" r="2.5" fill="#F59E0B" opacity="0.5"/>
+  <circle cx="950" cy="580" r="2" fill="#FFFFFF" opacity="0.3"/>
+  <circle cx="180" cy="550" r="2" fill="#2563EB" opacity="0.5"/>
+
+  <!-- Main logo icon (centered-left) -->
+  <g transform="translate(460, 155)">
+    <polygon points="55,0 110,31 110,95 55,126 0,95 0,31" fill="url(#blueGrad)" filter="url(#glow)"/>
+    <polygon points="55,10 98,33 98,89 55,112 12,89 12,33" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.7"/>
+    <text x="28" y="88" font-family="Georgia, serif" font-weight="900" font-size="56" fill="white">R</text>
+  </g>
+
+  <!-- Main title: RAAS -->
+  <text x="600" y="248" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="900" font-size="96" letter-spacing="12" fill="white" filter="url(#glow)">RAAS</text>
+
+  <!-- Gold underline -->
+  <rect x="390" y="265" width="420" height="4" rx="2" fill="url(#goldGrad)"/>
+
+  <!-- Enterprise -->
+  <text x="600" y="312" text-anchor="middle" font-family="'Arial', Helvetica, sans-serif" font-weight="300" font-size="22" letter-spacing="14" fill="#94A3B8">ENTERPRISE</text>
+
+  <!-- Tagline -->
+  <text x="600" y="390" text-anchor="middle" font-family="'Arial', Helvetica, sans-serif" font-weight="400" font-size="28" fill="#CBD5E1">Web Development  &amp;  Library Digitalization</text>
+
+  <!-- Two service pills -->
+  <g transform="translate(320, 430)">
+    <rect width="220" height="48" rx="24" fill="#2563EB" opacity="0.2" stroke="#2563EB" stroke-width="1.5"/>
+    <text x="110" y="30" text-anchor="middle" font-family="'Arial', Helvetica, sans-serif" font-size="15" font-weight="600" fill="#60A5FA">Web Presence</text>
+  </g>
+  <g transform="translate(562, 430)">
+    <rect width="320" height="48" rx="24" fill="#F59E0B" opacity="0.15" stroke="#F59E0B" stroke-width="1.5"/>
+    <text x="160" y="30" text-anchor="middle" font-family="'Arial', Helvetica, sans-serif" font-size="15" font-weight="600" fill="#FBBF24">Library Digitalization</text>
+  </g>
+
+  <!-- Bottom domain hint -->
+  <text x="600" y="590" text-anchor="middle" font-family="'Arial', Helvetica, sans-serif" font-size="16" letter-spacing="2" fill="#475569">raasEnterprise.com</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="618" width="1200" height="12" rx="0" fill="url(#goldGrad)" opacity="0.8"/>
+</svg>
